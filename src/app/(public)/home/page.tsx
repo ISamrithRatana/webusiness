@@ -42,7 +42,7 @@ export default function Shop() {
         <div className="flex items-end justify-between border-b border-gray-200 pb-4">
           <div className="flex items-center space-x-4">
             <h2 className="text-5xl font-bold tracking-tight"></h2>
-            <a className="text-lg text-gray-500">{new Date().toDateString()}</a>
+            <p className="text-lg text-gray-500">{new Date().toDateString()}</p>
           </div>
 
           {/* View options and sorting */}
