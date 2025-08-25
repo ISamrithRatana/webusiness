@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 const products = [
   {
     id: 1,
@@ -65,7 +65,7 @@ export default function Shop() {
             <div key={product.id} className=" rounded-3xl  bg-white p-4 shadow-lg">
               {/* Blank div placeholder for the image */}
               <div className="aspect-square w-full bg-gray-200">
-                <img src={product.img} alt={product.name} className="object-fill w-full h-full " />
+                <Image src={product.img} alt={product.name} className="object-fill w-full h-full " />
               </div>
               <div className="mt-4">
                 <h3 className="text-xl font-semibold">{product.name}</h3>
