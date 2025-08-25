@@ -26,21 +26,6 @@ export default function Navigation() {
               Search
         </button>
       </div>
-
-      {/* Navigation links and basket button on the right */}
-      <div className="flex items-center space-x-8 text-lg font-medium text-gray-600">
-        <nav className="flex items-center space-x-8">
-          <a href="/" className="hover:text-green-700">Home</a>
-          <a href="/shop" className="hover:text-green-700">Shop</a>
-          <a href="#" className="hover:text-green-700">Settings</a>
-          <a href="/dashboard" className="hover:text-green-700">Dashboard</a>
-          <a href="/contact" className="hover:text-green-700">Contact Us</a>
-          <a href="#" className="hover:text-green-700">About Us</a>
-        </nav>
-        <a href="/login" className="rounded-full bg-green-700 px-6 py-2 font-semibold text-white shadow-md hover:bg-green-800 transition-colors">
-          Login
-        </a>
-      </div>
     </header>
   );
 }
