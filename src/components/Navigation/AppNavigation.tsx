@@ -1,0 +1,46 @@
+'use client'
+import link from 'next/link';
+import Image from 'next/image';
+import Link from 'next/link';
+export default function Navigation() {
+  return (
+    <header  className="fixed top-0 left-0 right-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 md:px-8 py-3 shadow-md border-b border-gray-200">
+      <Link href="/">
+        <Image src="/logopic.png"
+          alt="Produce & Post"
+          className=""
+          width={100}
+          height={100}
+          priority
+        />
+      </Link>
+        
+      {/* Search bar in the middle */}
+      <div className="flex max-w-md mx-8 ">
+        <input
+          type="text"
+          placeholder="Search for produce..."
+          className="w-full rounded-l-full border border-gray-300 bg-gray-100 px-4 py-2 text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-700 transition-colors"
+        />
+        <button className="rounded-r-full bg-green-700 px-4 py-2 text-sm font-semibold text-white hover:bg-green-800 transition-colors">
+              Search
+        </button>
+      </div>
+
+      {/* Navigation links and basket button on the right */}
+      <div className="flex items-center space-x-8 text-lg font-medium text-gray-600">
+        <nav className="flex items-center space-x-8">
+          <a href="/" className="hover:text-green-700">Home</a>
+          <a href="/shop" className="hover:text-green-700">Shop</a>
+          <a href="#" className="hover:text-green-700">Settings</a>
+          <a href="/dashboard" className="hover:text-green-700">Dashboard</a>
+          <a href="/contact" className="hover:text-green-700">Contact Us</a>
+          <a href="#" className="hover:text-green-700">About Us</a>
+        </nav>
+        <a href="/login" className="rounded-full bg-green-700 px-6 py-2 font-semibold text-white shadow-md hover:bg-green-800 transition-colors">
+          Login
+        </a>
+      </div>
+    </header>
+  );
+}
