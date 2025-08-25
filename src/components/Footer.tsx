@@ -18,9 +18,9 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold text-gray-800 mb-3">Shop</h4>
           <nav className="flex flex-col space-y-2 text-sm">
-            <a href="/" className="hover:text-green-700 transition-colors">All Produce</a>
-            <a href="/" className="hover:text-green-700 transition-colors">Seasonal</a>
-            <a href="/" className="hover:text-green-700 transition-colors">Wholesale</a>
+            <Link href="/" className="hover:text-green-700 transition-colors">All Produce</Link>
+            <Link href="/" className="hover:text-green-700 transition-colors">Seasonal</Link>
+            <Link href="/" className="hover:text-green-700 transition-colors">Wholesale</Link>
           </nav>
         </div>
 
