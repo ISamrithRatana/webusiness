@@ -42,7 +42,7 @@ export default function Footer() {
             Get updates on new products and special offers.
           </p>
           <div className="flex">
-            <Link href="https://t.me/samrith_ratana" className="rounded-r-full bg-green-700 px-6 py-2 text-sm font-semibold text-white hover:bg-green-800 transition-colors ">
+            <Link href="https://t.me/samrith_ratana" className="rounded-full bg-green-700 px-6 py-2 text-sm font-semibold text-white hover:bg-green-800 transition-colors ">
               Subscribe
             </Link>
           </div>
