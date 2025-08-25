@@ -42,14 +42,9 @@ export default function Footer() {
             Get updates on new products and special offers.
           </p>
           <div className="flex">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="w-full rounded-l-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-green-700"
-            />
-            <button className="rounded-r-full bg-green-700 px-6 py-2 text-sm font-semibold text-white hover:bg-green-800 transition-colors ">
-              Sign Up
-            </button>
+            <Link href="https://t.me/samrith_ratana" className="rounded-r-full bg-green-700 px-6 py-2 text-sm font-semibold text-white hover:bg-green-800 transition-colors ">
+              Subscribe
+            </Link>
           </div>
         </div>
       </div>
