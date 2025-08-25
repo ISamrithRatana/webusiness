@@ -39,24 +39,9 @@ export default function Shop() {
       {/* Main content area */}
       <main className="container mx-auto px-8 pt-24">
         {/* Produce section header */}
-        <div className="flex items-end justify-between border-b border-gray-200 pb-4">
-          <div className="flex items-center space-x-4">
-            <h2 className="text-5xl font-bold tracking-tight"></h2>
-            <p className="text-lg text-gray-500">{new Date().toDateString()}</p>
-          </div>
-
-          {/* View options and sorting */}
-          <div className="flex items-center space-x-2">
-            <button className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-100">
-              Default
-            </button>
-            <button className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-100">
-              A-Z
-            </button>
-            <button className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-100">
-              List view
-            </button>
-          </div>
+        <div className="flex items-center space-x-4 border-b border-gray-200 pb-4">
+          <h2 className="text-5xl font-bold tracking-tight"></h2>
+          <p className="text-lg text-gray-500">{new Date().toDateString()}</p>
         </div>
 
         {/* Product grid */}
