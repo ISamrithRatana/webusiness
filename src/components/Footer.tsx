@@ -1,7 +1,6 @@
-// Footer.tsx
-// This component provides a responsive footer for the World Peas website,
-// styled with Tailwind CSS to match the existing design.
-//  
+'use client';
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-100 text-gray-600 font-sans p-8 md:p-12 mt-12 rounded-t-xl">
@@ -10,7 +9,7 @@ export default function Footer() {
         <div>
           <h3 className="text-2xl font-bold tracking-tight text-green-700 mb-4">Tech Solutions</h3>
           <p className="text-sm">
-            We're farmers, purveyors, and eaters of organically grown food. We believe
+            We re farmers, purveyors, and eaters of organically grown food. We believe
             in transparency, sustainability, and deliciousness.
           </p>
         </div>
@@ -29,10 +28,10 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold text-gray-800 mb-3">Company</h4>
           <nav className="flex flex-col space-y-2 text-sm">
-            <a href="/" className="hover:text-green-700 transition-colors">About Us</a>
-            <a href="/" className="hover:text-green-700 transition-colors">Our Farms</a>
-            <a href="/" className="hover:text-green-700 transition-colors">Careers</a>
-            <a href="/newsstand" className="hover:text-green-700 transition-colors">Newsstand</a>
+            <Link href="/" className="hover:text-green-700 transition-colors">About Us</Link>
+            <Link href="/" className="hover:text-green-700 transition-colors">Our Farms</Link>
+            <Link href="/" className="hover:text-green-700 transition-colors">Careers</Link>
+            <Link href="/newsstand" className="hover:text-green-700 transition-colors">Newsstand</Link>
           </nav>
         </div>
 
