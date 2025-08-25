@@ -50,7 +50,10 @@ export default function Shop() {
             <div key={product.id} className=" rounded-3xl  bg-white p-4 shadow-lg">
               {/* Blank div placeholder for the image */}
               <div className="aspect-square w-full bg-gray-200">
-                <Image src={product.img} alt={product.name} className="object-fill w-full h-full " />
+                <Image src={product.img} alt={product.name} 
+                width={100}
+                height={100}
+                className="object-fill w-full h-full" />
               </div>
               <div className="mt-4">
                 <h3 className="text-xl font-semibold">{product.name}</h3>
